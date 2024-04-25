@@ -119,14 +119,14 @@ const TabNavigation = () => {
           </CustomerLayout>
         )}
       </Tab.Screen>
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Test"
         options={{
           title: 'Test',
           tabBarLabel: 'Test',
         }}>
         {() => <Test />}
-      </Tab.Screen>
+      </Tab.Screen> */}
     </Tab.Navigator>
   );
 };
