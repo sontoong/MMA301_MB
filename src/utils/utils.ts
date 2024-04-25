@@ -1,5 +1,5 @@
 export const formatCurrency = (amount: number) => {
-  const realAmount = amount * 1000;
+  const realAmount = amount;
   return realAmount.toLocaleString('vi-VN', {
     style: 'currency',
     currency: 'VND',
@@ -43,8 +43,6 @@ export const formatToTimeDifference = (
     numeric: 'auto',
   };
   const formatter = new Intl.RelativeTimeFormat(locale, options);
-
-  console.log(timeDifference);
 
   if (timeDifference < 60000) {
     return formatter.format(-Math.floor(timeDifference / 1000), 'second');
